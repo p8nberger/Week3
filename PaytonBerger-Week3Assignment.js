@@ -10,26 +10,33 @@
 */
 let ages = [3, 9, 23, 64, 2, 8, 28, 93];
 
-let first = ages.slice(0, 0);
-console.log(ages[first]);
+let first = ages.slice(0, 0);   // I don't know how to subtract the first element fromt he last programmatically.
+console.log(first);
 
-let last = ages.length -1;
+let last = ages.length -1;    // This is how one would grab the final element in an array. 
 console.log(ages[last]);
-
-
 
 const average = ages.reduce((a, b) => a + b, 0) / ages.length;     // average age in the age array
 console.log(average);
 
 /*
-2.	Create an array called names that contains the following values: ‘Sam’, ‘Tommy’, ‘Tim’, ‘Sally’, ‘Buck’, ‘Bob’.
+2.	Create an array called names that contains the following values: 'Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'.
     a.	Use a loop to iterate through the array and calculate the average number of letters per name. 
         Print the result to the console.
     b.	Use a loop to iterate through the array again and concatenate all the names together, 
         separated by spaces, and print the result to the console.
 */
-let names = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'];
+let names = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'];   // names array
 console.log(names);
+
+// I don't know how to count the number of letters in a string in an array.
+
+let result = '';                            // this loop concatenates the elements in the strings array 
+for (let i = 0; i < names.length; i++) {
+    result = result.concat(names[i] + " ");
+}
+console.log(result);
+
 
 /*
 3.	How do you access the last element of any array?
